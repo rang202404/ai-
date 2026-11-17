@@ -1,0 +1,4 @@
+# 运行期依赖（test 环境已装）
+pandas>=2.0
+scikit-learn>=1.3
+joblib>=1.3

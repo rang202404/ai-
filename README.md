@@ -63,6 +63,7 @@ scripts/                  fetch_corpus / build_index / ask / evaluate
 tests/                    22 个 pytest 用例
 docs/                     GitHub 账号、Git 安装配置、pull/push、LICENSE、验证记录
 examples/generated/       RAG 落盘的 .py 产物
+steel-ml/                 碳钢成分回归演示（独立子项目，见 steel-ml/README.md）
 data/                     语料与索引缓存（git 忽略）
 ```
 

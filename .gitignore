@@ -28,3 +28,7 @@ desktop.ini
 
 # 与本项目无关的历史脚本（保留文件，不入库）
 random_numbers.py
+
+# steel-ml 训练产物
+steel-ml/models/
+*.joblib
