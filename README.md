@@ -105,6 +105,3 @@ data/                     语料与索引缓存（git 忽略）
 - 未使用 embedding，语义泛化弱，中文提问需带英文关键词；
 - 无 Key 时为抽取式引用，不做归纳；
 - 本机 `raw.githubusercontent.com` 被阻断，采集依赖 jsDelivr 镜像（同一 commit）。
-
-> 演示提交：来自 clone 仓库，用于验证 pull/push。
-
