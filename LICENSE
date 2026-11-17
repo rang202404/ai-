@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 ai-bigdata-rag contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+适用范围与许可分层（License Scope）
+
+1. 代码（rag/*.py、scripts/*.py、tests/*.py 以及其它可执行源码）
+   —— MIT License，即本文件上方正文。
+
+2. 文档（agent.md、README.md、AI与大数据/*.md、docs/*.md）
+   —— Creative Commons Attribution 4.0 International（CC BY 4.0）
+      全文：https://creativecommons.org/licenses/by/4.0/legalcode
+      转载/改编需注明来源：ai-bigdata-rag（D:\test）。
+
+3. 第三方语料（从 GitHub 抓取的仓库内容）**不因本项目而改变许可证**。
+   - pallets/flask        BSD-3-Clause
+   - psf/requests         Apache-2.0
+   - tiangolo/fastapi     MIT
+   详见 `THIRD_PARTY_NOTICES.md`。`examples/generated/*.py` 中由检索结果落盘的
+   代码片段，其著作权仍归上游项目作者，使用时必须同时遵守上游许可证。
+
+4. 本 LICENSE 不构成法律意见；商用前请自行复核上游许可证义务。

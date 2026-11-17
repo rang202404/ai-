@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ---- 运行期数据（可重建，勿提交）----
+data/corpus/
+data/index/
+data/eval_report.json
+
+# ---- 便携工具 ----
+tools/
+.git-remote-demo/
+
+# ---- 凭据 ----
+.env
+*.key
+*.pem
+
+# ---- 编辑器/系统 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# 与本项目无关的历史脚本（保留文件，不入库）
+random_numbers.py

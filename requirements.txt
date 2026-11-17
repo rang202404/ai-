@@ -1,0 +1,2 @@
+# 运行期零第三方依赖：仅使用 Python 标准库（3.10+）。
+# 测试期依赖见 requirements-dev.txt。
