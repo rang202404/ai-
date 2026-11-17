@@ -142,7 +142,41 @@ git push origin main
 ```
 
 结论：**推送、克隆、拉取、快进合并、跟踪分支均验证通过**。
-换成 GitHub 地址后流程完全一致，只是需要 PAT 或 SSH 认证。
+
+### 8.1 GitHub 真实推送（2026-11-17 已完成）
+
+远端仓库：<https://github.com/rang202404/ai->（空仓库，main 分支）。
+
+```powershell
+# 1) 生成专用 SSH 密钥（无口令，仅本机）
+ssh-keygen -t ed25519 -f $HOME\.ssh\id_ed25519 -C "rang202404@ai-"
+
+# 2) 把公钥加到 GitHub → Settings → SSH and GPG keys
+ssh -T git@github.com
+# Hi rang202404! You've successfully authenticated...
+
+# 3) 添加远端并推送
+git remote add github git@github.com:rang202404/ai-.git
+git fetch github
+# 远端自带 Initial commit（README.md），历史不相干，需要合并
+git merge github/main --allow-unrelated-histories
+# README 冲突：保留本项目版本
+git checkout --ours README.md
+git add README.md
+git commit --no-edit
+git push -u github main
+# 116ac5c..e5be17a  main -> main
+```
+
+验证：
+
+```text
+git ls-remote github
+e5be17a66b7cea46253b84db47c20bf47eaac0ac  refs/heads/main
+```
+
+注意：本机 `https://github.com` 的 HTTPS 请求超时（API 正常），所以走 SSH；
+SSH 22 与 `ssh.github.com:443` 均可握手。
 
 ## 9. 常见错误
 
@@ -161,4 +195,4 @@ git push origin main
 - [x] 已配置远端并推送
 - [x] 已从克隆仓库推送并被主仓库拉取
 - [x] 冲突处理与回滚命令已掌握
-- [ ] GitHub 真实远端推送（需用户账号凭据，未在本机执行）
+- [x] GitHub 真实远端推送（2026-11-17 完成，SSH，commit e5be17a）

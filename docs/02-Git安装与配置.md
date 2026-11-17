@@ -113,6 +113,10 @@ Get-Content $HOME\.ssh\id_ed25519.pub   # 上传到 GitHub
 ssh -T git@github.com                   # 验证
 ```
 
+本机已生成专用密钥 `~/.ssh/id_ed25519`（无口令），公钥已添加到 GitHub；
+远端 `github` 使用 `git@github.com:rang202404/ai-.git`。因 `https://github.com`
+的 HTTPS 请求在本机超时，推送统一走 SSH（22 或 `ssh.github.com:443` 均可）。
+
 ### 5.3 PAT（HTTPS）
 
 在 GitHub → Settings → Developer settings → Personal access tokens 创建，

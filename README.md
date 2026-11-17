@@ -36,6 +36,7 @@ python scripts/evaluate.py
 | 测试 | 22 passed |
 | 验收 | 5/5（3 个有据可答 + 2 个越界拒答） |
 | 生成产物 | `examples/generated/` 下 3 个 `.py`，均通过 `ast.parse` |
+| GitHub 远端 | <https://github.com/rang202404/ai->（main 已推送） |
 
 数值会随语料重建变化，以 `python -m rag.cli stats` 为准。
 
